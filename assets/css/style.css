@@ -1,0 +1,26 @@
+body {
+    font-family: 'Josefin', sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    padding: 0;
+}
+
+.container {
+    width: 80;
+    height: 700px;
+    margin: 0 auto;
+    border: 10px solid var(--clr-dark);
+}
+
+.intro {
+    width: 150px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: bisque;
+    padding: 1em;
+    text-align: center;
+    border: 10px solid var(--clr--accent);
+
+}
