@@ -1,26 +1,114 @@
-body {
-    font-family: 'Josefin', sans-serif;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    height: 100vh;
+
+html, body {
+    margin: 0;
     padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "Kanit", sans-serif;
+    color: whitesmoke;
+}
+
+body {
+    background: url('../images/hero-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    padding: 0;
+    position: relative;
+    width: 70%;
+    flex: end;
+    justify-content: right;
+    
+}
+nav{
+    flex-wrap: wrap;
+    flex: end;
+    text-align: right;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    
+
+}
+nav ul li {
+    margin: 0 15px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: wheat;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 40px;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+main {
+    margin-top: 60px; /* add space to account for fixed header */
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(0, 2, 18, 0.8); /* semi-transparent white background */
+    border-radius: -4px;
+    box-shadow: 0 0 10px rgba(100, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 60px auto; /* center the content */
+    
 }
 
 .container {
-    width: 80;
-    height: 700px;
-    margin: 0 auto;
-    border: 10px solid var(--clr-dark);
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
-.intro {
-    width: 150px;
-    height: 200px;
-    margin: 0 auto;
-    background-color: bisque;
-    padding: 1em;
-    text-align: center;
-    border: 10px solid var(--clr--accent);
 
+
+
+
+
+/* .bg-color-name-intro {
+    background-color: #292c36;
+} */
+
+/* h1 {
+    margin: 0;
+    font-family: "Kanit", sans-serif;
+} */
+
+/* .logo {
+    background: url("../images/hero-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+} */
+
+
+
+/* .name {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 46px;
+    margin-top: 50px;
+    color: #fff;
+} */
+
+.intro {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 90px;
+    color: #fff;
 }
