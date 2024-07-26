@@ -1,20 +1,198 @@
 
+
 html, body {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     height: 100%;
     width: 100%;
+    height: 100%;
+    overflow-x: hidden;
     font-family: "Kanit", sans-serif;
-    color: whitesmoke;
+    color: #EAE8D5;
+} 
+
+.hidden-heading {
+    display: none;
 }
 
+.navalert-container {
+    position: fixed;
+    display: inline-flex;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1;
+}
+.navalert-container h1 {
+    font-family: "Josefin Sans", sans-serif;
+    width: 30%;
+    color: #EAE8D5;
+    
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: #443B49;
+}
+
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+.active {
+    border-bottom: 1px solid #443B49;
+}
+
+
+/*--------------------------------------------------------------------------------hero image and header----*/
+
+.hero-container {
+    height: 100vh;
+    width: 100%;
+    background: url("../images/japan-natural-beauty-2.jpg") no-repeat center center/cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(196, 193, 32, 0.5)
+}
+.jumbotron {
+    background-color:#443B49;
+
+}
+jumbotron-header {
+    color: #B69A6A;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.block-divider--rose {
+    width: 50%;
+    height: 0.5rem;
+    border: 0;
+    border-radius: 25px;
+    background-color: #443B49;
+}
+.jumbotron .lead {
+    margin: 25px 0;
+    color: #B69A6A;
+}
+
+/*--------------------------------------------------------------------------------Exploring Japan*/
+
+.container-wrapper--rose {
+    background-color: #443B49;
+}
+
+.showcase-container {
+    text-align: center;
+}
+
+/*--------------------------------------------------------------------------------showcase overlay*/
+
+.slide-container {
+    position: relative;
+}
+
+.image {
+    display: block;
+    border-radius: 25px;
+    height: auto;
+    width: 100%;
+}
+.showcaseimage {
+    border-radius: 25px;
+    height: auto;
+    max-width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    /* Align to the top of the slide-container */
+    left: 0;
+    /* Align to the left of the slide-container */
+    right: 0;
+    /* Align to the right of the slide-container */
+    bottom: 0;
+    background-color: rgba(196, 193, 32, 0.5);
+    border-radius: 25px;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+
+.slide-container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.overlay-text {
+    white-space: nowrap;
+    color: #EAE8D5;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 3rem;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.overlay-text a {
+    text-decoration: none;
+    color: #EAE8D5;
+}
+
+/*--------------------------------------------------------------------------------explore page */
+
+.img-fluid {
+    position: relative;
+    text-align: center;
+    min-width: 100%;
+}
+
+destinations-header-text {
+    color: #EAE8D5;
+    font-family: "Kanit", sans-serif;
+    font-size: 5rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-weight: bold;
+    margin: 0;
+}
+/* 
 body {
     background: url('../images/hero-image.jpg') no-repeat center center fixed;
-    background-size: cover;
-}
+    background-size: cover; */
+/* }
 header {
-    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
-    padding: 0;
+    background-color: rgba(0, 0, 0, 0.5);  */
+    /* padding: 0;
     position: relative;
     width: 70%;
     flex: end;
@@ -47,27 +225,27 @@ nav ul li a {
     font-size: 40px;
 }
 nav ul li a:hover {
-    text-decoration: underline;
-}
+    text-decoration: underline; */
+ /* }
 main {
-    margin-top: 60px; /* add space to account for fixed header */
+    margin-top: 60px; add space to account for fixed header 
     text-align: center;
     padding: 50px;
-    background-color: rgba(0, 2, 18, 0.8); /* semi-transparent white background */
+    background-color: rgba(0, 2, 18, 0.8); semi-transparent white background
     border-radius: -4px;
     box-shadow: 0 0 10px rgba(100, 0, 0, 0.1);
     max-width: 600px;
-    margin: 60px auto; /* center the content */
-    
-}
-
+    margin: 60px auto; center the content
+     
+ } */
+/* 
 .container {
     max-width: 1300px;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
 }
-
+ */ */
 
 
 
