@@ -1,20 +1,18 @@
-
-
-html, body {
-    margin: 0px;
-    padding: 0px;
-    height: 100%;
+html,
+body {
     width: 100%;
     height: 100%;
+    margin: 0px;
+    padding: 0px;
     overflow-x: hidden;
-    font-family: "Kanit", sans-serif;
-    color: #EAE8D5;
-} 
+    background-color: #fff;
+}
 
 .hidden-heading {
     display: none;
 }
 
+/**Nav bar styling and effects*/
 .navalert-container {
     position: fixed;
     display: inline-flex;
@@ -24,18 +22,17 @@ html, body {
     padding-right: 0;
     z-index: 1;
 }
+
 .navalert-container h1 {
     font-family: "Josefin Sans", sans-serif;
     width: 30%;
-    color: #EAE8D5;
-    
+    color: #0a52f8;
 }
-
 .navbar {
     margin-bottom: 0;
     border: 0;
     width: 100%;
-    background-color: #443B49;
+    background-color: rgb(106, 148, 8);
 }
 
 .navbar .navbar-toggler {
@@ -46,16 +43,15 @@ html, body {
     font-weight: bold;
 }
 .active {
-    border-bottom: 1px solid #443B49;
+    border-bottom: 1px solid #0a52f8;
 }
 
-
-/*--------------------------------------------------------------------------------hero image and header----*/
+/*----Hero Image and heading styles---*/
 
 .hero-container {
     height: 100vh;
     width: 100%;
-    background: url("../images/japan-natural-beauty-2.jpg") no-repeat center center/cover;
+    background: url("../images/contact-image.jpg") no-repeat center center/cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -65,20 +61,25 @@ html, body {
     justify-content: center;
     position: relative;
 }
+
 .opaque-overlay {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(196, 193, 32, 0.5)
+    background-color: rgba(10, 16, 13, 0.5);
 }
+
+/*---Jumbotron styles---*/
+
 .jumbotron {
-    background-color:#443B49;
+    background-color: transparent;
 
 }
-jumbotron-header {
-    color: #B69A6A;
+
+.jumbotron-header {
+    color: #0a52f8;
     font-weight: bold;
     margin-bottom: 30px;
     font-family: "Josefin Sans", sans-serif;
@@ -89,28 +90,31 @@ jumbotron-header {
     height: 0.5rem;
     border: 0;
     border-radius: 25px;
-    background-color: #443B49;
+    background-color: #0a52f8;
 }
+
 .jumbotron .lead {
     margin: 25px 0;
-    color: #B69A6A;
+    color: #0a52f8;
 }
 
-/*--------------------------------------------------------------------------------Exploring Japan*/
+/**---Japanese Showcase---*/
 
 .container-wrapper--rose {
-    background-color: #443B49;
+    background-color: #0a52f8;
 }
 
 .showcase-container {
     text-align: center;
 }
 
-/*--------------------------------------------------------------------------------showcase overlay*/
+/** Showcase styling --*/
+
 
 .slide-container {
     position: relative;
 }
+
 
 .image {
     display: block;
@@ -118,6 +122,7 @@ jumbotron-header {
     height: auto;
     width: 100%;
 }
+
 .showcaseimage {
     border-radius: 25px;
     height: auto;
@@ -125,6 +130,8 @@ jumbotron-header {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
+
 .overlay {
     position: absolute;
     top: 0;
@@ -134,7 +141,7 @@ jumbotron-header {
     right: 0;
     /* Align to the right of the slide-container */
     bottom: 0;
-    background-color: rgba(196, 193, 32, 0.5);
+    background-color: rgba(10, 16, 13, 0.5);
     border-radius: 25px;
     overflow: hidden;
     width: 100%;
@@ -148,10 +155,11 @@ jumbotron-header {
     height: 100%;
 }
 
+
 .overlay-text {
     white-space: nowrap;
-    color: #EAE8D5;
-    font-family: "Josefin Sans", sans-serif;
+    color: #ffe6e8;
+    font-family: "Italiana", sans-serif;
     font-size: 3rem;
     position: absolute;
     overflow: hidden;
@@ -160,12 +168,14 @@ jumbotron-header {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
+
 .overlay-text a {
     text-decoration: none;
-    color: #EAE8D5;
+    color: #ffe6e8;
 }
 
-/*--------------------------------------------------------------------------------explore page */
+/*---Explore page---*/
+
 
 .img-fluid {
     position: relative;
@@ -173,9 +183,10 @@ jumbotron-header {
     min-width: 100%;
 }
 
-destinations-header-text {
-    color: #EAE8D5;
-    font-family: "Kanit", sans-serif;
+
+.explore-header-text {
+    color: #0a52f8;
+    font-family: "Josefin Sans", sans-serif;
     font-size: 5rem;
     position: absolute;
     left: 50%;
@@ -185,108 +196,209 @@ destinations-header-text {
     font-weight: bold;
     margin: 0;
 }
-/* 
-body {
-    background: url('../images/hero-image.jpg') no-repeat center center fixed;
-    background-size: cover; */
-/* }
-header {
-    background-color: rgba(0, 0, 0, 0.5);  */
-    /* padding: 0;
-    position: relative;
-    width: 70%;
-    flex: end;
-    justify-content: right;
-    
-}
-nav{
-    flex-wrap: wrap;
-    flex: end;
-    text-align: right;
-}
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+
+
+.explore-text {
+    padding: 20px 40px;
     display: inline-block;
-    
-
-}
-nav ul li {
-    margin: 0 15px;
-    display: inline-block;
-    margin-right: 10px;
 }
 
-nav ul li a {
-    color: wheat;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 40px;
+
+.small-explore-img {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 140px;
+    height: 180px;
+    border-radius: 50%;
+    margin-left: 100px;
 }
-nav ul li a:hover {
-    text-decoration: underline; */
- /* }
-main {
-    margin-top: 60px; add space to account for fixed header 
-    text-align: center;
-    padding: 50px;
-    background-color: rgba(0, 2, 18, 0.8); semi-transparent white background
-    border-radius: -4px;
-    box-shadow: 0 0 10px rgba(100, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 60px auto; center the content
-     
- } */
-/* 
-.container {
-    max-width: 1300px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+
+.small-explore-img-md {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 140px;
+    height: 180px;
+    border-radius: 50%;
+    margin-left: 100px;
+    margin-right: 100px;
 }
- */ */
+
+/*-----Contact form---*/
 
 
-
-
-
-/* .bg-color-name-intro {
-    background-color: #292c36;
-} */
-
-/* h1 {
-    margin: 0;
-    font-family: "Kanit", sans-serif;
-} */
-
-/* .logo {
-    background: url("../images/hero-image.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
+.signup-container {
+    margin-top: 63px;
+    height: 100vh;
+    width: 100%;
+    background: url("../images/japan-natural-beauty\ cover.png") no-repeat center center/cover;
     background-size: cover;
+    position: relative;
     display: flex;
     align-items: center;
-    transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-} */
+    justify-content: center;
+}
 
 
-
-/* .name {
+.signup-heading {
+    text-align: center;
+    text-transform: uppercase;
     font-family: "Josefin Sans", sans-serif;
-    font-weight: 300;
-    font-size: 46px;
-    margin-top: 50px;
-    color: #fff;
-} */
+    font-size: 2rem;
+    margin-top: 70px;
+}
 
-.intro {
+.signup-form {
+    color: #0a52f8;
+    padding: 30px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+.text-input {
+    background: transparent;
+    color: #0a52f8;
+    width: 100%;
+    padding: 0 5px;
+}
+
+
+.radio-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #0a52f8;
     font-family: "Kanit", sans-serif;
-    font-weight: 200;
-    font-size: 20px;
+}
+
+
+#signup>h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #0A100D;
+}
+
+
+.checkbox {
+    color: #ffe6e8;
+    vertical-align: center;
+    font-family: "Roboto", sans-serif;
+    margin-top:1rem;
+}
+
+
+.submit-button {
     margin-top: 20px;
-    margin-bottom: 90px;
-    color: #fff;
+    border-radius: 25px;
+    font-size: 100%;
+    padding: 15px 32px;
+    color: #FFE6E8;
+    background-color: #5518d8;
+    align-items: center;
+    border: none;
+}
+
+
+.submit-button:hover {
+    background-color: #ecc836;
+    color: #7ada95;
+}
+
+.text-input:hover {
+    border-color: #28025d;
+}
+
+/*-----Footer Styling---*/
+
+footer {
+    background-color: #ecc836;
+    color: #0a52f8;
+    min-height: 120px;
+    margin: 0;
+}
+.social-links {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    line-height: 7px;
+    text-align: center;
+    color: #0a52f8;
+    background-color: #ecc836;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: #ecc836;
+    color: #7ada95;
+}
+
+
+#footer-details {
+    padding-top: 20px;
+}
+
+
+/*--------------------------------------------------------------------------------media query for mobile */
+
+@media screen and (max-width: 446px) {
+
+    .navalert-container h1 {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 1.5rem;
+    }
+
+    .destinations-header-text {
+        color: #0a52f8;
+        top: 50%;
+        font-size: 3rem;
+    }
+
+    .destinations-header-text-j-i {
+        color: #0a52f8;
+        top: 25%;
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .img-fluid {
+        position: relative;
+        text-align: center;
+        min-width: 100%;
+    }
+
+    /*--------------------------------------------------------------------------------media query for signup form on desktop and larger devices */
+
+    #signup-form {
+        margin-top: 8rem;
+        max-width: 400px;
+    }
+
+    .submit-button:hover {
+        background-color: #7ada95;
+        color: #ecc836;
+    }
+
 }
